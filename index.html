@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logic Form</title>
+</head>
+<body>
+    <h3>LOGIC</h3>
+    <form form="Login_form" onsubmit="submit_form()">
+        <h4> USERNAME</h4>
+        <input type="text" id="username" placeholder="Enter your email id"/>
+        <h4> PASSWORD</h4>
+        <input type="text" id="password" placeholder="Enter your password"/><br><br>
+        <input type="submit" value="Login" onclick="submit_form()"/>
+        <input type="button" value="Signup" onclick="create()"/>
+    </form>
+    <script type="text/javascript">
+        function submit_form(){
+            alert("Login successfully");
+        }
+        function create(){
+            window.location="signup.html";
+        }
+    </script>
+</body>
+</html>

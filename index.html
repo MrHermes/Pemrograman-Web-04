@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logic Form</title>
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <h3>LOGIC</h3>
-    <form form="Login_form" onsubmit="submit_form()">
-        <h4> USERNAME</h4>
-        <input type="text" id="username" placeholder="Enter your email id"/>
-        <h4> PASSWORD</h4>
-        <input type="text" id="password" placeholder="Enter your password"/><br><br>
-        <input type="submit" value="Login"/>
-        <input type="button" value="Signup" onclick="create()"/>
-    </form>
+    <div class="main-div">
+        <h3>LOGIN</h3>
+        <form form="Login_form" onsubmit="submit_form()">
+            <h4 class="upper-head"> USERNAME</h4>
+            <input type="text" placeholder="Enter your email id"/>
+            <h4> PASSWORD</h4>
+            <input type="password" placeholder="Enter your password"/><br><br>
+            <input type="submit" value="Login"/>
+            <input type="button" value="Signup" onclick="create()"/>
+        </form>
+    </div>
+    
     <script type="text/javascript">
         function submit_form(){
             alert("Login successfully");

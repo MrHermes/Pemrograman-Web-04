@@ -1,0 +1,72 @@
+body {
+    height: 100vh;
+    background-color:aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-div {
+    width: 80vh;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    background-color: black;
+    color: whitesmoke;
+    border: 10px;
+    border-style: solid;
+    border-color: white;
+}
+
+table {
+    width: 65vh;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 40px;
+}
+
+td {
+    color: black;
+    font-weight: 800;
+    text-align: start;
+    background-color: white;
+    padding: 20px;
+}
+
+input {
+    border: none;
+    background-color: none;
+}
+
+.create-button {
+    text-align: center;
+    padding: 15px;
+}
+
+.create-button-shape {
+    padding: 15px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: larger;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    border-color: black;
+    border-style: solid;
+    transition: all .5s ease-in-out;
+}
+
+.create-button-shape:hover{
+    border-color: black;
+    background-color: white;
+    color: black;
+    padding-left: 90px;
+    padding-right: 90px;
+    cursor: pointer;
+}

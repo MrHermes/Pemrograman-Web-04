@@ -55,10 +55,24 @@
             //other validations required code
             if (n==''||e==''||p==''||cp==''){
                 alert("Enter each details correctly");
-            }else if (!letter.test(n))
+            }
+            else if (!letter.test(n))
             {
                 alert("Password not matching");
-            }else if (document.getElementById("p1").value.length < 6)
+            }
+            else if (!email_val.test(e))
+            {
+                alert('Invalid email format please enter valid email');
+            }
+            else if (p!=cp)
+            {
+                alert("Passwords not matching");
+            }
+            else if (document.getElementById("p1").value.length > 12)
+            {
+                alert("Password minimum length is 6");
+            }
+            else if (document.getElementById("p1").value.length < 6)
             {
                 alert("Password minimum length is 6");
             }else {
